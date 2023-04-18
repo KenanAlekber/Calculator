@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 400px;
+    margin: 55px auto;
+    background-color: rgb(24, 24, 41);
+}
+
+section .output{
+    position: relative;
+}
+
+section .output::after {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    content: "10+10";
+    width: 390px;
+    position: absolute;
+    height: 130px;
+    background-color: rgb(50, 66, 66);
+    color: aliceblue;
+    border: solid 5px black;
+    border-radius: 20px;
+    font-size: 50px;
+}
+
+section .buttons{
+    padding-top: 140px;
+}
+
+section .buttons button {
+    width: calc((380px)/4);
+    margin: 0 1px;
+    height: 90px;
+    background-color: rgb(50, 66, 66);
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+
+section .buttons .ac-button {
+    color: rgb(195, 85, 45);
+    font-weight: 800;
+}
